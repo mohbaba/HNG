@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 django-rest-framework = "*"
 ipinfo-django = "*"
+python-dotenv = "*"
+requests = "*"
 
 [dev-packages]
 

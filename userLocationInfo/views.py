@@ -1,10 +1,7 @@
 import requests
-from django.shortcuts import render
 from django.http import JsonResponse, HttpRequest
 from dotenv import load_dotenv
-
 import os
-
 from rest_framework.decorators import api_view
 
 load_dotenv()

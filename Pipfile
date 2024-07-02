@@ -9,6 +9,7 @@ django-rest-framework = "*"
 ipinfo-django = "*"
 python-dotenv = "*"
 requests = "*"
+gunicorn = "*"
 
 [dev-packages]
 

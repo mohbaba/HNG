@@ -1,5 +1,6 @@
 import requests
-from django.http import JsonResponse, HttpRequest
+from django.http import JsonResponse, HttpResponse
+from django.shortcuts import render
 from dotenv import load_dotenv
 import os
 from rest_framework.decorators import api_view
@@ -28,3 +29,7 @@ def get_visitor_ip_address(request, visitor_ip_address):
         visitor_ip = visitor_ip_address.split(',')[0]
         return visitor_ip
     return request.META.get('REMOTE_ADDR')
+
+
+def index(request):
+    return HttpResponse("Hello! You are being watched 🤐🤐👺😈")
